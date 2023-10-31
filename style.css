@@ -1,0 +1,143 @@
+:root {
+    --font-primary: "Lexend Deca", Arial, Helvetica, sans-serif;
+    --font-heading:"Big Shoulders Display", Arial, Helvetica, sans-serif;
+
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --transparent: hsla(0,0%,100%,0);
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9375rem;
+    font-family: var(--font-primary);
+    font-weight: 400;   
+    background-color: var(--very-light-gray);
+}
+
+h2 {
+    margin-block: 0.5em;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+    font-size: 2.7rem;
+    color: var(--very-light-gray)
+}
+
+p {
+    line-height: 1.5;
+    color: var(--transparent-white);
+}
+
+.screenreader-only {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 80vw;  
+    margin: 2em auto; 
+}
+
+.card {  
+    padding: 2.5em;         
+}
+
+.sedans {  
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background-color: var(--bright-orange);
+}
+
+.SUVs {
+    background-color: var(--dark-cyan);
+
+}
+
+.luxury {
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color: var(--very-dark-cyan);    
+}
+
+.btn-card {
+    text-decoration: none;
+    display: block;
+    max-width: 50%;
+    margin-top: 2em;
+    padding-block: 0.5em;
+    font-weight: 400;
+    text-align: center;
+    border: 3px solid var(--very-light-gray);
+    border-radius: 2em;   
+    background-color: var(--very-light-gray);
+}
+
+.btn-sedans {
+    color: var(--bright-orange)
+}
+
+.btn-SUVs {
+    color: var(--dark-cyan);
+}
+
+.btn-luxury {
+    color: var(--very-dark-cyan);
+}
+
+.btn-card:hover,
+.btn-card:active {
+    color: var(--very-light-gray);
+    background-color: var(--transparent);
+}
+
+.attribution { 
+    margin-top: 1em;
+    font-size: 0.7rem; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: var(--dark-cyan); 
+}
+
+@media (min-width:850px) {
+    .container {
+        max-width: 56em;
+        display: flex;
+    }
+
+    .sedans {
+        border-radius: 0;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;   
+    }   
+    
+    .luxury {
+        border-radius: 0;
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+    }
+
+    .btn-card {
+        max-width: 80%;
+        margin-top: 5em;
+    }
+}
