@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/zoedarkweather/zoedarkweather.github.io](https://github.com/zoedarkweather/zoedarkweather.github.io)
-- Live Site URL: [https://zoedarkweather.github.io/](https://zoedarkweather.github.io/)
+- Solution URL: [https://github.com/zoedarkweather/3-column-preview-card-component](https://github.com/zoedarkweather/3-column-preview-card-component)
+- Live Site URL: [https://3-column-preview-card-component-one-lyart.vercel.app/](https://3-column-preview-card-component-one-lyart.vercel.app/)
 
 ## My process
 
